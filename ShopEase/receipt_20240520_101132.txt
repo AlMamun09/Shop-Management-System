@@ -1,0 +1,19 @@
+Receipt
+
+Date: 2024-05-20 10:11:32
+
+Item                 Quantity   Price     
+----------------------------------------
+Rice                 60         $42.00     
+Onion                10         $9.00      
+Sugar                10         $7.00      
+Oil                  10         $17.00     
+Flour                20         $8.00      
+Lentils              10         $14.00     
+Mojo                 6          $1.50      
+PranUp               12         $10.80     
+Ice Cream            2          $0.50      
+
+Total                           $109.80    
+Given Amount                    $150.00    
+Change Amount                   $40.20     

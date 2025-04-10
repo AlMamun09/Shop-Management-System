@@ -1,0 +1,11 @@
+Receipt
+
+Date: 2024-05-20 11:09:28
+
+Item                 Quantity   Price     
+----------------------------------------
+Rice                 2          Taka1.40      
+
+Total                           Taka1.40      
+Given Amount                    Taka100.00    
+Change Amount                   Taka98.60     

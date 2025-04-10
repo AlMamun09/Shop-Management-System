@@ -1,0 +1,13 @@
+Receipt
+
+Date: 2024-05-20 10:17:17
+
+Item                 Quantity   Price     
+----------------------------------------
+Rice                 5          $3.50      
+Onion                2          $1.80      
+Sugar                2          $1.40      
+
+Total                           $6.70      
+Given Amount                    $10.00     
+Change Amount                   $3.30      

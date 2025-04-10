@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shopease.DashboardController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="60.0" layoutY="-4.0" prefHeight="635.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-0.0">
+               <left>
+                  <AnchorPane prefHeight="639.0" prefWidth="237.0" style="-fx-background-color: #1fd655;" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutY="27.0" prefHeight="621.0" prefWidth="238.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="78.0" prefWidth="181.0" AnchorPane.bottomAnchor="522.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="20.0" layoutY="22.0" prefHeight="34.0" prefWidth="143.0" text="Shop Ease" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="19.333333333333343" AnchorPane.topAnchor="22.0">
+                                       <font>
+                                          <Font name="Bodoni MT Black Italic" size="28.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="27.0" layoutY="73.0" text="Welcome to our shop">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Button layoutX="33.0" layoutY="247.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="172.0" style="-fx-background-color: #00AB41;" text="MANAGE ITEMS">
+                                 <font>
+                                    <Font name="Arial Black" size="12.0" />
+                                 </font></Button>
+                              <Button layoutX="33.0" layoutY="295.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="172.0" style="-fx-background-color: #00AB41;" text="INVENTORY">
+                                 <font>
+                                    <Font name="Arial Black" size="12.0" />
+                                 </font></Button>
+                              <Button layoutX="33.0" layoutY="344.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="172.0" style="-fx-background-color: #00AB41;" text="SALES OVERVIEW">
+                                 <font>
+                                    <Font name="Arial Black" size="12.0" />
+                                 </font></Button>
+                              <Button fx:id="logoutbutton" layoutX="53.0" layoutY="571.0" mnemonicParsing="false" onAction="#signoutButton" prefHeight="31.0" prefWidth="131.0" stylesheets="@mainFormDesign.css" text="SIGN OUT">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="btn" />
+                                    <String fx:value="radius" />
+                                 </styleClass></Button>
+                              <Button fx:id="btnProduct" layoutX="33.0" layoutY="198.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="172.0" style="-fx-background-color: #00AB41;" text="PRODUCT">
+                                 <font>
+                                    <Font name="Arial Black" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane fx:id="anchorProduct" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00ab41;" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="7.0" layoutY="25.333333333333332" prefHeight="584.0" prefWidth="851.0" style="-fx-background-radius: 5px; -fx-background-color: #39e75f;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="25.0">
+                           <children>
+                              <AnchorPane layoutX="6.0" layoutY="8.0" prefHeight="571.0" prefWidth="527.0" style="-fx-background-color: #90ee90; -fx-border-radius: 10px;" stylesheets="@mainFormDesign.css" AnchorPane.leftAnchor="6.0">
+                                 <children>
+                                    <AnchorPane layoutX="4.0" layoutY="6.0" prefHeight="176.0" prefWidth="170.0">
+                                       <children>
+                                          <VBox layoutX="35.0" layoutY="-32.0" prefHeight="181.0" prefWidth="170.0" style="-fx-background-color: #00c04b;" stylesheets="@mainFormDesign.css" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox prefHeight="19.0" prefWidth="170.0" style="-fx-background-color: #00ab41;">
+                                                   <children>
+                                                      <Label fx:id="rice" prefHeight="19.0" prefWidth="91.0" text="Rice">
+                                                         <font>
+                                                            <Font name="Bodoni MT Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="ricePrice" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="19.0" prefWidth="70.0" text="\$0.7">
+                                                         <font>
+                                                            <Font name="Book Antiqua Italic" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <AnchorPane prefHeight="87.0" prefWidth="170.0">
+                                                   <children>
+                                                      <AnchorPane layoutX="7.0" layoutY="10.0" />
+                                                      <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                                         <image>
+                                                            <Image url="@Pictures/Bashmati%20Rice.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </AnchorPane>
+                                                <HBox alignment="CENTER" prefHeight="39.0" prefWidth="170.0">
+                                                   <children>
+                                                      <Spinner fx:id="riceSpinner" prefHeight="30.0" prefWidth="88.0" />
+                                                      <Button fx:id="riceAddbtn" minWidth="53.0" mnemonicParsing="false" onAction="#riceAddbtnAction" prefHeight="30.0" prefWidth="53.0" stylesheets="@mainFormDesign.css" text="ADD">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                         <styleClass>
+                                                            <String fx:value="btn" />
+                                                            <String fx:value="radius" />
+                                                         </styleClass>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="white-bg" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="4.0" layoutY="198.0" prefHeight="176.0" prefWidth="170.0">
+                                       <children>
+                                          <VBox layoutY="-1.6666666666666665" prefHeight="181.0" prefWidth="170.0" style="-fx-background-color: #00c04b;" stylesheets="@mainFormDesign.css" AnchorPane.bottomAnchor="-2.333333333333343" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.6666666666666665">
+                                             <children>
+                                                <HBox prefHeight="19.0" prefWidth="170.0" style="-fx-background-color: #00ab41;">
+                                                   <children>
+                                                      <Label prefHeight="19.0" prefWidth="89.0" text="Soyabin Oil">
+                                                         <font>
+                                                            <Font name="Bodoni MT Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="19.0" prefWidth="70.0" text="\$1.7">
+                                                         <font>
+                                                            <Font name="Book Antiqua Italic" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <AnchorPane prefHeight="87.0" prefWidth="170.0">
+                                                   <children>
+                                                      <AnchorPane layoutX="7.0" layoutY="10.0" />
+                                                      <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                                         <image>
+                                                            <Image url="@Pictures/Oil.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </AnchorPane>
+                                                <HBox alignment="CENTER" prefHeight="39.0" prefWidth="170.0">
+                                                   <children>
+                                                      <Spinner fx:id="oilSpinner" prefHeight="30.0" prefWidth="88.0" />
+                                                      <Button fx:id="oilAddbtn" minWidth="53.0" mnemonicParsing="false" onAction="#oilAddbtnAction" prefHeight="30.0" prefWidth="53.0" stylesheets="@mainFormDesign.css" text="ADD">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                         <styleClass>
+                                                            <String fx:value="btn" />
+                                                            <String fx:value="radius" />
+                                                         </styleClass>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="white-bg" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="179.0" layoutY="198.0" prefHeight="176.0" prefWidth="170.0">
+                                       <children>
+                                          <VBox layoutX="-0.6666666666666666" layoutY="-1.6666666666666665" prefHeight="181.0" prefWidth="170.0" style="-fx-background-color: #00c04b;" stylesheets="@mainFormDesign.css" AnchorPane.bottomAnchor="-2.333333333333343" AnchorPane.leftAnchor="-0.6666666666666666" AnchorPane.rightAnchor="1.3333333333333428" AnchorPane.topAnchor="-1.6666666666666665">
+                                             <children>
+                                                <HBox prefHeight="19.0" prefWidth="170.0" style="-fx-background-color: #00ab41;">
+                                                   <children>
+                                                      <Label prefHeight="19.0" prefWidth="89.0" text="Flour">
+                                                         <font>
+                                                            <Font name="Bodoni MT Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="19.0" prefWidth="70.0" text="\$0.4">
+                                                         <font>
+                                                            <Font name="Book Antiqua Italic" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <AnchorPane prefHeight="87.0" prefWidth="170.0">
+                                                   <children>
+                                                      <AnchorPane layoutX="7.0" layoutY="10.0" />
+                                                      <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                                         <image>
+                                                            <Image url="@Pictures/Flour.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </AnchorPane>
+                                                <HBox alignment="CENTER" prefHeight="39.0" prefWidth="170.0">
+                                                   <children>
+                                                      <Spinner fx:id="flourSpinner" prefHeight="30.0" prefWidth="88.0" />
+                                                      <Button fx:id="flourAddbtn" minWidth="53.0" mnemonicParsing="false" onAction="#flourAddbtnAction" prefHeight="30.0" prefWidth="53.0" stylesheets="@mainFormDesign.css" text="ADD">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                         <styleClass>
+                                                            <String fx:value="btn" />
+                                                            <String fx:value="radius" />
+                                                         </styleClass>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="white-bg" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="179.0" layoutY="6.0" prefHeight="176.0" prefWidth="170.0">
+                                       <children>
+                                          <VBox layoutX="-1.0" prefHeight="181.0" prefWidth="170.0" style="-fx-background-color: #00c04b;" stylesheets="@mainFormDesign.css" AnchorPane.bottomAnchor="-4.666666666666657" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox prefHeight="19.0" prefWidth="170.0" style="-fx-background-color: #00ab41;">
+                                                   <children>
+                                                      <Label prefHeight="19.0" prefWidth="95.0" text="Onion">
+                                                         <font>
+                                                            <Font name="Bodoni MT Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="19.0" prefWidth="70.0" text="\$0.9">
+                                                         <font>
+                                                            <Font name="Book Antiqua Italic" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <AnchorPane prefHeight="87.0" prefWidth="170.0">
+                                                   <children>
+                                                      <AnchorPane layoutX="7.0" layoutY="10.0" />
+                                                      <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                                         <image>
+                                                            <Image url="@Pictures/Onion%20(Custom).jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </AnchorPane>
+                                                <HBox alignment="CENTER" prefHeight="39.0" prefWidth="170.0">
+                                                   <children>
+                                                      <Spinner fx:id="onionSpinner" prefHeight="30.0" prefWidth="88.0" />
+                                                      <Button fx:id="onionAddbtn" minWidth="53.0" mnemonicParsing="false" onAction="#onionAddbtnAction" prefHeight="30.0" prefWidth="53.0" stylesheets="@mainFormDesign.css" text="ADD">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                         <styleClass>
+                                                            <String fx:value="btn" />
+                                                            <String fx:value="radius" />
+                                                         </styleClass>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="white-bg" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="356.0" layoutY="6.0" prefHeight="176.0" prefWidth="170.0">
+                                       <children>
+                                          <VBox layoutX="-3.6666666666666665" prefHeight="181.0" prefWidth="170.0" style="-fx-background-color: #00c04b;" stylesheets="@mainFormDesign.css" AnchorPane.bottomAnchor="-4.666666666666657" AnchorPane.leftAnchor="-3.6666666666666665" AnchorPane.rightAnchor="5.666666666666657" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox prefHeight="19.0" prefWidth="170.0" style="-fx-background-color: #00ab41;">
+                                                   <children>
+                                                      <Label prefHeight="19.0" prefWidth="89.0" text="Sugar">
+                                                         <font>
+                                                            <Font name="Bodoni MT Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="19.0" prefWidth="70.0" text="\$0.7">
+                                                         <font>
+                                                            <Font name="Book Antiqua Italic" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <AnchorPane prefHeight="87.0" prefWidth="170.0">
+                                                   <children>
+                                                      <AnchorPane layoutX="7.0" layoutY="10.0" />
+                                                      <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                                         <image>
+                                                            <Image url="@Pictures/Sugar.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </AnchorPane>
+                                                <HBox alignment="CENTER" prefHeight="39.0" prefWidth="170.0">
+                                                   <children>
+                                                      <Spinner fx:id="sugarSpinner" prefHeight="30.0" prefWidth="88.0" />
+                                                      <Button fx:id="sugarAddbtn" minWidth="53.0" mnemonicParsing="false" onAction="#sugarAddbtnAction" prefHeight="30.0" prefWidth="53.0" stylesheets="@mainFormDesign.css" text="ADD">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                         <styleClass>
+                                                            <String fx:value="btn" />
+                                                            <String fx:value="radius" />
+                                                         </styleClass>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <styleClass>
+                                                <String fx:value="white-bg" />
+                                                <String fx:value="shadow" />
+                                             </styleClass>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <VBox layoutX="352.0" layoutY="196.0" prefHeight="181.0" prefWidth="170.0" style="-fx-background-color: #00c04b;" stylesheets="@mainFormDesign.css">
+                                       <children>
+                                          <HBox prefHeight="19.0" prefWidth="170.0" style="-fx-background-color: #00ab41;">
+                                             <children>
+                                                <Label prefHeight="19.0" prefWidth="90.0" text="Lentils">
+                                                   <font>
+                                                      <Font name="Bodoni MT Bold" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="19.0" prefWidth="70.0" text="\$1.4">
+                                                   <font>
+                                                      <Font name="Book Antiqua Italic" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <AnchorPane prefHeight="87.0" prefWidth="170.0">
+                                             <children>
+                                                <AnchorPane layoutX="7.0" layoutY="10.0" />
+                                                <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                                   <image>
+                                                      <Image url="@Pictures/lentils.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                          <HBox alignment="CENTER" prefHeight="39.0" prefWidth="170.0">
+                                             <children>
+                                                <Spinner fx:id="lentilsSpinner" prefHeight="30.0" prefWidth="88.0" />
+                                                <Button fx:id="lentilsAddbtn" minWidth="53.0" mnemonicParsing="false" onAction="#lentilsAddbtnAction" prefHeight="30.0" prefWidth="53.0" stylesheets="@mainFormDesign.css" text="ADD">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                   <styleClass>
+                                                      <String fx:value="btn" />
+                                                      <String fx:value="radius" />
+                                                   </styleClass>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </VBox>
+                                    <VBox layoutX="4.0" layoutY="385.0" prefHeight="181.0" prefWidth="170.0" style="-fx-background-color: #00c04b;" stylesheets="@mainFormDesign.css">
+                                       <children>
+                                          <HBox prefHeight="19.0" prefWidth="170.0" style="-fx-background-color: #00ab41;">
+                                             <children>
+                                                <Label prefHeight="19.0" prefWidth="89.0" text="Mojo">
+                                                   <font>
+                                                      <Font name="Bodoni MT Bold" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="19.0" prefWidth="70.0" text="\$0.25">
+                                                   <font>
+                                                      <Font name="Book Antiqua Italic" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <AnchorPane prefHeight="87.0" prefWidth="170.0">
+                                             <children>
+                                                <AnchorPane layoutX="7.0" layoutY="10.0" />
+                                                <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                                   <image>
+                                                      <Image url="@Pictures/Mojo.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                          <HBox alignment="CENTER" prefHeight="39.0" prefWidth="170.0">
+                                             <children>
+                                                <Spinner fx:id="mojoSpinner" prefHeight="30.0" prefWidth="88.0" />
+                                                <Button fx:id="mojoAddbtn" minWidth="53.0" mnemonicParsing="false" onAction="#mojoAddbtnAction" prefHeight="30.0" prefWidth="53.0" stylesheets="@mainFormDesign.css" text="ADD">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                   <styleClass>
+                                                      <String fx:value="btn" />
+                                                      <String fx:value="radius" />
+                                                   </styleClass>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </VBox>
+                                    <VBox layoutX="179.0" layoutY="385.0" prefHeight="181.0" prefWidth="170.0" style="-fx-background-color: #00c04b;" stylesheets="@mainFormDesign.css">
+                                       <children>
+                                          <HBox prefHeight="19.0" prefWidth="170.0" style="-fx-background-color: #00ab41;">
+                                             <children>
+                                                <Label prefHeight="19.0" prefWidth="88.0" text="Pran Up">
+                                                   <font>
+                                                      <Font name="Bodoni MT Bold" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="19.0" prefWidth="70.0" text="\$0.9">
+                                                   <font>
+                                                      <Font name="Book Antiqua Italic" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <AnchorPane prefHeight="87.0" prefWidth="170.0">
+                                             <children>
+                                                <AnchorPane layoutX="7.0" layoutY="10.0" />
+                                                <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                                   <image>
+                                                      <Image url="@Pictures/PranUp.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                          <HBox alignment="CENTER" prefHeight="39.0" prefWidth="170.0">
+                                             <children>
+                                                <Spinner fx:id="pranupSpinner" prefHeight="30.0" prefWidth="88.0" />
+                                                <Button fx:id="pranupAddbtn" minWidth="53.0" mnemonicParsing="false" onAction="#pranupAddbtnAction" prefHeight="30.0" prefWidth="53.0" stylesheets="@mainFormDesign.css" text="ADD">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                   <styleClass>
+                                                      <String fx:value="btn" />
+                                                      <String fx:value="radius" />
+                                                   </styleClass>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </VBox>
+                                    <VBox layoutX="352.0" layoutY="385.0" prefHeight="181.0" prefWidth="170.0" style="-fx-background-color: #00c04b;" stylesheets="@mainFormDesign.css">
+                                       <children>
+                                          <HBox prefHeight="19.0" prefWidth="170.0" style="-fx-background-color: #00ab41;">
+                                             <children>
+                                                <Label prefHeight="19.0" prefWidth="91.0" text="Ice Cream">
+                                                   <font>
+                                                      <Font name="Bodoni MT Bold" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="19.0" prefWidth="70.0" text="\$0.25">
+                                                   <font>
+                                                      <Font name="Book Antiqua Italic" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <AnchorPane prefHeight="87.0" prefWidth="170.0">
+                                             <children>
+                                                <AnchorPane layoutX="7.0" layoutY="10.0" />
+                                                <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                                   <image>
+                                                      <Image url="@Pictures/Ice%20Cream.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                          <HBox alignment="CENTER" prefHeight="39.0" prefWidth="170.0">
+                                             <children>
+                                                <Spinner fx:id="iceSpinner" prefHeight="30.0" prefWidth="88.0" />
+                                                <Button fx:id="iceAddbtn" minWidth="53.0" mnemonicParsing="false" onAction="#iceAddbtnAction" prefHeight="30.0" prefWidth="53.0" stylesheets="@mainFormDesign.css" text="ADD">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                   <styleClass>
+                                                      <String fx:value="btn" />
+                                                      <String fx:value="radius" />
+                                                   </styleClass>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </VBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="radius" />
+                                 </styleClass></AnchorPane>
+                              <AnchorPane fx:id="calculationAnchorpane" layoutX="553.0" layoutY="8.0" prefHeight="571.0" prefWidth="299.0" style="-fx-background-color: #90ee90; -fx-border-radius: 10px;" stylesheets="@mainFormDesign.css" AnchorPane.rightAnchor="5.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView fx:id="memoTable" layoutX="9.0" layoutY="6.0" prefHeight="311.0" prefWidth="288.0" styleClass="radius" stylesheets="@mainFormDesign.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+                                      <columns>
+                                        <TableColumn fx:id="product" prefWidth="116.66668212413788" text="Product Name" />
+                                        <TableColumn fx:id="quantity" prefWidth="77.33338165283203" text="Quantity" />
+                                        <TableColumn fx:id="price" prefWidth="90.0" text="Price ($)" />
+                                      </columns>
+                                    </TableView>
+                                    <Label alignment="TOP_RIGHT" layoutX="132.0" layoutY="333.0" prefHeight="21.0" prefWidth="70.0" text="Total: " AnchorPane.leftAnchor="132.0" AnchorPane.rightAnchor="97.33333333333331">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="total" layoutX="202.0" layoutY="333.0" prefHeight="21.0" prefWidth="71.0" text="0.00 Taka" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="17.999999999999986">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="TOP_RIGHT" layoutX="136.0" layoutY="362.0" prefHeight="21.0" prefWidth="65.0" text="Amount: " AnchorPane.leftAnchor="132.0" AnchorPane.rightAnchor="97.33333333333331">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="amount" layoutX="201.0" layoutY="360.0" onAction="#amountAction" prefHeight="27.0" prefWidth="84.0" promptText="0.00 Taka" style="-fx-border-radius: 10px;" AnchorPane.leftAnchor="201.33333333333331" AnchorPane.rightAnchor="14.333333333333314" />
+                                    <Label alignment="TOP_RIGHT" layoutX="140.0" layoutY="394.0" prefHeight="21.0" prefWidth="61.0" text="Change: " AnchorPane.leftAnchor="132.0" AnchorPane.rightAnchor="97.33333333333333">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="change" layoutX="202.0" layoutY="394.0" prefHeight="21.0" prefWidth="79.0" text="0.00 Taka" AnchorPane.rightAnchor="17.999999999999986">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="btnRemove" layoutX="29.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnRemoveAction" prefHeight="31.0" prefWidth="105.0" styleClass="btn" stylesheets="@mainFormDesign.css" text="REMOVE" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="165.0" />
+                                    <Button fx:id="btnReceipt" layoutX="165.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnReceiptAction" prefHeight="31.0" prefWidth="105.0" styleClass="btn" stylesheets="@mainFormDesign.css" text="RECEIPT" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="31.0" />
+                                    <Button fx:id="btnPay" layoutX="29.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnPayAction" prefHeight="31.0" prefWidth="247.0" styleClass="btn" stylesheets="@mainFormDesign.css" text="PAY" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="31.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
