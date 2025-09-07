@@ -2,7 +2,6 @@
 
 A straightforward desktop Point of Sale (POS) application built with JavaFX. **ShopEase** provides a simple, clean interface for a cashier to manage daily sales, process payments, and generate receipts for a small retail or grocery store.
 
-> **Note:** Replace this with an actual screenshot of your application's dashboard.
 
 ---
 
